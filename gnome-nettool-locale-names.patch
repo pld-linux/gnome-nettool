@@ -1,0 +1,12 @@
+diff -urN aa/gnome-nettool-0.99.1/configure.in gnome-nettool-0.99.1/configure.in
+--- aa/gnome-nettool-0.99.1/configure.in	2004-06-08 19:47:19.000000000 +0200
++++ gnome-nettool-0.99.1/configure.in	2004-07-24 01:01:28.359708320 +0200
+@@ -60,7 +60,7 @@
+ GETTEXT_PACKAGE=gnome-nettool
+ AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The gettext package])
+-ALL_LINGUAS="az ca cs da de el en_CA en_GB es fr ga gl he hu it ja ko ms nl no pl pt pt_BR ru sr sr@Latn sv tr uk vi wa zh_CN zh_TW"
++ALL_LINGUAS="az ca cs da de el en_CA en_GB es fr ga gl he hu it ja ko ms nb nl pl pt pt_BR ru sr sr@Latn sv tr uk vi wa zh_CN zh_TW"
+ AM_GLIB_GNU_GETTEXT
+ 
+ AC_SUBST(CFLAGS)
