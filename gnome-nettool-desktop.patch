@@ -1,0 +1,17 @@
+diff -urN aa/gnome-nettool-0.99.1/src/gnome-nettool.desktop.in gnome-nettool-0.99.1/src/gnome-nettool.desktop.in
+--- aa/gnome-nettool-0.99.1/src/gnome-nettool.desktop.in	2004-06-04 13:24:39.000000000 +0200
++++ gnome-nettool-0.99.1/src/gnome-nettool.desktop.in	2004-07-24 01:12:31.324922288 +0200
+@@ -1,10 +1,11 @@
+ [Desktop Entry]
++Encoding=UTF-8
+ _Name=Network Tools
+ _Comment=Network Information Tools
+ Exec=gnome-nettool
+ Icon=gnome-nettool.png
+-Terminal=0
++Terminal=false
+ Type=Application
+-Categories=Application;Network;
++Categories=GTK;GNOME;Network;
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=gnome-nettool
