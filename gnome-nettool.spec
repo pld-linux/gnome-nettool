@@ -2,7 +2,7 @@ Summary:	GNOME interface for networking tools
 Summary(pl):	Interfejs dla narzêdzi sieciowych dla GNOME
 Name:		gnome-nettool
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/1.2/%{name}-%{version}.tar.bz2
@@ -16,7 +16,7 @@ BuildRequires:	gnome-common >= 2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.6.3
 BuildRequires:	intltool >= 0.11
 BuildRequires:	libglade2-devel >= 1:2.5.1
-BuildRequires:	libgnomeui-devel >= 2.10.0
+BuildRequires:	libgnomeui-devel >= 2.10.0-2
 BuildRequires:	libtool
 Requires:	gtk+2 >= 2:2.6.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
