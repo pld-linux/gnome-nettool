@@ -12,12 +12,14 @@ URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-common >= 2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.6.3
 BuildRequires:	intltool >= 0.11
 BuildRequires:	libglade2-devel >= 1:2.5.1
 BuildRequires:	libgnomeui-devel >= 2.10.0-2
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 Requires:	gtk+2 >= 2:2.6.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
