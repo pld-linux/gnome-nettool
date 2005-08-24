@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %post
 %banner %{name} -e << EOF
 For full functionality, you need to install various networking command-line
-tools, like ping, netstat, ifconfig, whois, traceroute, finger
+tools, like ping, netstat, ifconfig, whois, traceroute, finger.
 EOF
 
 %files -f %{name}.lang
