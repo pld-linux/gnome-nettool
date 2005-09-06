@@ -1,12 +1,12 @@
 Summary:	GNOME interface for networking tools
 Summary(pl):	Interfejs dla narzêdzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	1.2.0
-Release:	2
+Version:	1.4.0
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/1.2/%{name}-%{version}.tar.bz2
-# Source0-md5:	277338cf5d54ae9941260dd993a14f7a
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/1.4/%{name}-%{version}.tar.bz2
+# Source0-md5:	b91bdd05abc19f281239bba698a3dd35
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel
@@ -14,13 +14,12 @@ BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-common >= 2.8.0
-BuildRequires:	gtk+2-devel >= 2:2.6.3
+BuildRequires:	gtk+2-devel >= 2:2.8.3
 BuildRequires:	intltool >= 0.11
 BuildRequires:	libglade2-devel >= 1:2.5.1
-BuildRequires:	libgnomeui-devel >= 2.10.0-2
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
-Requires:	gtk+2 >= 2:2.6.3
+Requires:	gtk+2 >= 2:2.8.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -55,6 +54,12 @@ rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%banner %{name} -e << EOF
+For full functionality, you need to install various networking command-line
+tools, like ping, netstat, ifconfig, whois, traceroute, finger.
+EOF
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
