@@ -1,12 +1,12 @@
 Summary:	GNOME interface for networking tools
 Summary(pl):	Interfejs dla narzêdzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	2.13.91
+Version:	2.14.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/2.13/%{name}-%{version}.tar.bz2
-# Source0-md5:	4c6eca6878fd5dda53cc3958cb8fc408
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/2.14/%{name}-%{version}.tar.bz2
+# Source0-md5:	2969f06d98f36c4031cb2b321c6607c3
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel
