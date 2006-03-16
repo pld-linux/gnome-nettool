@@ -1,24 +1,25 @@
 Summary:	GNOME interface for networking tools
 Summary(pl):	Interfejs dla narzêdzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	1.0.0
+Version:	2.14.0
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	a3261bd247960ba066b965c5a9a662e1
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/2.14/%{name}-%{version}.tar.bz2
+# Source0-md5:	2969f06d98f36c4031cb2b321c6607c3
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-common >= 2.8.0
-BuildRequires:	gtk+2-devel >= 2:2.4.4
+BuildRequires:	gtk+2-devel >= 2:2.8.3
 BuildRequires:	intltool >= 0.11
-BuildRequires:	libglade2-devel >= 2.4.0
-BuildRequires:	libgnomeui-devel >= 2.0.0
+BuildRequires:	libglade2-devel >= 1:2.5.1
 BuildRequires:	libtool
-Requires:	gtk+2 >= 2:2.4.4
+BuildRequires:	pkgconfig
+Requires:	gtk+2 >= 2:2.8.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -34,6 +35,7 @@ traceroute czy dig dla GNOME.
 %patch0 -p1
 
 %build
+%{__intltoolize}
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
@@ -53,6 +55,12 @@ rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%banner %{name} -e << EOF
+For full functionality, you need to install various networking command-line
+tools, like ping, netstat, ifconfig, whois, traceroute, finger.
+EOF
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
