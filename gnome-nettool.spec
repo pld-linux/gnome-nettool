@@ -19,6 +19,7 @@ BuildRequires:	intltool >= 0.35
 BuildRequires:	libglade2-devel >= 1:2.6.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
+BuildRequires:	scrollkeeper
 Requires(post,postun):	scrollkeeper
 Requires(post,postun):	gtk+2 >= 2:2.10.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
