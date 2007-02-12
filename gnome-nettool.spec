@@ -1,5 +1,5 @@
 Summary:	GNOME interface for networking tools
-Summary(pl):	Interfejs dla narzêdzi sieciowych dla GNOME
+Summary(pl.UTF-8):   Interfejs dla narzÄ™dzi sieciowych dla GNOME
 Name:		gnome-nettool
 Version:	2.16.0
 Release:	1
@@ -28,8 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a GNOME GUI for the basic networking tools like ping, whois,
 traceroute and dig.
 
-%description -l pl
-GUI dla podstawowych narzêdzi sieciowych, takich jak ping, whois,
+%description -l pl.UTF-8
+GUI dla podstawowych narzÄ™dzi sieciowych, takich jak ping, whois,
 traceroute czy dig dla GNOME.
 
 %prep
