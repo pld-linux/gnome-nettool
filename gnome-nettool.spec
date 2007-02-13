@@ -1,5 +1,5 @@
 Summary:	GNOME interface for networking tools
-Summary(pl.UTF-8):   Interfejs dla narzędzi sieciowych dla GNOME
+Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
 Version:	2.16.0
 Release:	1
