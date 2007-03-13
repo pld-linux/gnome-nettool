@@ -1,12 +1,12 @@
-diff -aurN gnome-nettool-2.15.91.orig/src/gnome-nettool.desktop.in gnome-nettool-2.15.91/src/gnome-nettool.desktop.in
---- gnome-nettool-2.15.91.orig/src/gnome-nettool.desktop.in	2006-04-14 05:46:06.000000000 +0200
-+++ gnome-nettool-2.15.91/src/gnome-nettool.desktop.in	2006-08-11 17:41:23.153353690 +0200
+diff -urN gnome-nettool-2.18.0/src/gnome-nettool.desktop.in.in gnome-nettool-2.18.0.new/src/gnome-nettool.desktop.in.in
+--- gnome-nettool-2.18.0/src/gnome-nettool.desktop.in.in	2007-03-13 02:18:37.000000000 +0100
++++ gnome-nettool-2.18.0.new/src/gnome-nettool.desktop.in.in	2007-03-13 13:21:44.000000000 +0100
 @@ -6,7 +6,7 @@
  Icon=gnome-nettool
  Terminal=false
  Type=Application
--Categories=Application;System;Utility;GNOME;GTK
-+Categories=GTK;GNOME;System;Utility;
+-Categories=System;Utility;GNOME;GTK;
++Categories=GNOME;GTK;System;Utility;
  StartupNotify=true
  X-GNOME-Bugzilla-Bugzilla=GNOME
  X-GNOME-Bugzilla-Product=gnome-nettool
