@@ -1,13 +1,13 @@
 Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	2.18.0
-Release:	1
+Version:	2.19.90
+Release:	0.1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/2.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	596616cf631b5bc9ec0c873208ccfce9
-Patch0:		%{name}-desktop.patch
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/2.19/%{name}-%{version}.tar.bz2
+# Source0-md5:	5f3a1c3f2ad639494dc4c98cfa1f1b1c
+#Patch0:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.18.0.1
 BuildRequires:	autoconf >= 2.52
@@ -35,7 +35,7 @@ traceroute czy dig dla GNOME.
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 %{__intltoolize}
@@ -79,6 +79,9 @@ EOF
 %{_iconsdir}/hicolor/*/apps/*
 %dir %{_omf_dest_dir}/%{name}
 %{_omf_dest_dir}/%{name}/gnome-nettool-C.omf
+%lang(ca) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-ca.omf
+%lang(es) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-es.omf
 %lang(fr) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-fr.omf
 %lang(pa) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-pa.omf
 %lang(sv) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-sv.omf
+%lang(uk) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-uk.omf
