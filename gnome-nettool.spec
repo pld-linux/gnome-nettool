@@ -1,22 +1,22 @@
 Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	2.18.0
+Version:	2.20.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-nettool/2.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	596616cf631b5bc9ec0c873208ccfce9
-Patch0:		%{name}-desktop.patch
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/2.20/%{name}-%{version}.tar.bz2
+# Source0-md5:	8f16e4207655ccf1e7af679fc0f58bbd
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.18.0.1
-BuildRequires:	autoconf >= 2.52
-BuildRequires:	automake
+BuildRequires:	GConf2-devel >= 2.19.1
+BuildRequires:	autoconf >= 2.59
+BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-devel
-BuildRequires:	gnome-common >= 2.12.0
-BuildRequires:	gtk+2-devel >= 2:2.10.10
-BuildRequires:	intltool >= 0.35.5
-BuildRequires:	libglade2-devel >= 1:2.6.0
+BuildRequires:	gnome-common >= 2.20.0
+BuildRequires:	gnome-doc-utils >= 0.12.0
+BuildRequires:	gtk+2-devel >= 2:2.12.0
+BuildRequires:	intltool >= 0.36.2
+BuildRequires:	libglade2-devel >= 1:2.6.2
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	scrollkeeper
@@ -35,7 +35,6 @@ traceroute czy dig dla GNOME.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__intltoolize}
@@ -79,6 +78,11 @@ EOF
 %{_iconsdir}/hicolor/*/apps/*
 %dir %{_omf_dest_dir}/%{name}
 %{_omf_dest_dir}/%{name}/gnome-nettool-C.omf
+%lang(ca) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-ca.omf
+%lang(es) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-es.omf
 %lang(fr) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-fr.omf
+%lang(oc) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-oc.omf
 %lang(pa) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-pa.omf
 %lang(sv) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-sv.omf
+%lang(uk) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-uk.omf
+%lang(vi) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-vi.omf
