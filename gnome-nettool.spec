@@ -23,6 +23,11 @@ BuildRequires:	scrollkeeper
 Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
 Requires(post,postun):	scrollkeeper
+Suggests:	bsd-finger
+Suggests:	net-tools
+Suggests:	ping
+Suggests:	traceroute
+Suggests:	whois
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -62,10 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%banner %{name} -e << EOF
-For full functionality, you need to install various networking command-line
-tools, like ping, netstat, ifconfig, whois, traceroute, finger.
-EOF
 %scrollkeeper_update_post
 %update_icon_cache hicolor
 
