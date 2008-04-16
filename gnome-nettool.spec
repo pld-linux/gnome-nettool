@@ -1,3 +1,6 @@
+# TODO:
+#	- adapt src/ping.h to PLD ping
+#
 Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
@@ -23,6 +26,7 @@ BuildRequires:	scrollkeeper
 Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
 Requires(post,postun):	scrollkeeper
+Suggests:	bind-utils
 Suggests:	bsd-finger
 Suggests:	net-tools
 Suggests:	ping
