@@ -4,12 +4,12 @@
 Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	2.22.0
+Version:	2.22.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/2.22/%{name}-%{version}.tar.bz2
-# Source0-md5:	290dd50a08a3859332afb6daf46dde25
+# Source0-md5:	afcaff8ebc76b5f352902ed424dc2856
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.19.1
 BuildRequires:	autoconf >= 2.59
