@@ -4,25 +4,27 @@
 Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	2.26.0
+Version:	2.26.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	34bc06209bb72bd85d45829eecc078cb
+# Source0-md5:	476a0ffe807cfc374732d944efc83058
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.19.1
+BuildRequires:	GConf2-devel >= 2.26.0
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-common >= 2.20.0
 BuildRequires:	gnome-doc-utils >= 0.12.0
-BuildRequires:	gtk+2-devel >= 2:2.12.0
-BuildRequires:	intltool >= 0.36.2
+BuildRequires:	gtk+2-devel >= 2:2.16.0
+BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libglade2-devel >= 1:2.6.2
+BuildRequires:	libgtop-devel >= 2.26.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
-BuildRequires:	scrollkeeper
+BuildRequires:	rpmbuild(find_lang) >= 1.23
+BuildRequires:	rpmbuild(macros) >= 1.311
 Requires(post,postun):	gtk+2
 Requires(post,postun):	hicolor-icon-theme
 Requires(post,postun):	scrollkeeper
@@ -50,7 +52,7 @@ traceroute czy dig dla GNOME.
 %build
 %{__intltoolize}
 %{__libtoolize}
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
 %configure \
@@ -63,8 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-[ -d $RPM_BUILD_ROOT%{_datadir}/locale/sr@latin ] || \
-	mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sr@{Latn,latin}
 %find_lang %{name} --with-gnome --with-omf
 
 %clean
@@ -85,13 +85,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 %{_desktopdir}/*.desktop
 %{_iconsdir}/hicolor/*/apps/*
-%dir %{_omf_dest_dir}/%{name}
-%{_omf_dest_dir}/%{name}/gnome-nettool-C.omf
-%lang(ca) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-ca.omf
-%lang(es) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-es.omf
-%lang(fr) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-fr.omf
-%lang(oc) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-oc.omf
-%lang(pa) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-pa.omf
-%lang(sv) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-sv.omf
-%lang(uk) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-uk.omf
-%lang(vi) %{_omf_dest_dir}/gnome-nettool/gnome-nettool-vi.omf
