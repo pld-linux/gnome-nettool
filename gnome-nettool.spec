@@ -22,6 +22,7 @@ BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libglade2-devel >= 1:2.6.2
 BuildRequires:	libgtop-devel >= 2.26.0
 BuildRequires:	libtool
+BuildRequires:	libxml2-progs
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.311
