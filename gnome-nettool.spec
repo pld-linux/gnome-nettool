@@ -4,12 +4,12 @@
 Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	2.26.1
+Version:	2.28.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	476a0ffe807cfc374732d944efc83058
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/2.28/%{name}-%{version}.tar.bz2
+# Source0-md5:	e5d44454cfa4c5ca5e640c304f18fe0e
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.26.0
 BuildRequires:	autoconf >= 2.59
@@ -82,7 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/gnome-nettool
 %{_datadir}/%{name}
-%{_desktopdir}/*.desktop
+%{_desktopdir}/gnome-nettool.desktop
 %{_iconsdir}/hicolor/*/apps/*
