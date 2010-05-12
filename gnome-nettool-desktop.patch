@@ -1,0 +1,22 @@
+--- gnome-nettool-2.28.0/src/gnome-nettool.desktop.in.in~	2009-09-22 15:30:34.000000000 +0200
++++ gnome-nettool-2.28.0/src/gnome-nettool.desktop.in.in	2010-05-12 16:41:40.345100687 +0200
+@@ -6,7 +6,7 @@
+ Icon=gnome-nettool
+ Terminal=false
+ Type=Application
+-Categories=System;Utility;GNOME;GTK;
++Categories=Network;System;Utility;GNOME;GTK;
+ StartupNotify=true
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=gnome-nettool
+--- gnome-nettool-2.28.0/src/gnome-nettool.desktop.in~	2009-09-22 16:22:07.000000000 +0200
++++ gnome-nettool-2.28.0/src/gnome-nettool.desktop.in	2010-05-12 16:41:46.976142102 +0200
+@@ -6,7 +6,7 @@
+ Icon=gnome-nettool
+ Terminal=false
+ Type=Application
+-Categories=System;Utility;GNOME;GTK;
++Categories=Network;System;Utility;GNOME;GTK;
+ StartupNotify=true
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=gnome-nettool

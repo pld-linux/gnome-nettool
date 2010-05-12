@@ -5,11 +5,12 @@ Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
 Version:	2.28.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/2.28/%{name}-%{version}.tar.bz2
 # Source0-md5:	e5d44454cfa4c5ca5e640c304f18fe0e
+Patch0:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.26.0
 BuildRequires:	autoconf >= 2.59
@@ -50,6 +51,7 @@ traceroute czy dig dla GNOME.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__intltoolize}
