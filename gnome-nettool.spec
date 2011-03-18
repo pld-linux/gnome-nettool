@@ -76,12 +76,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 %scrollkeeper_update_post
-%glib_compile_schema
+%glib_compile_schemas
 %update_icon_cache hicolor
 
 %postun
 %scrollkeeper_update_postun
-%glib_compile_schema
+%glib_compile_schemas
 %update_icon_cache hicolor
 
 %files -f %{name}.lang
