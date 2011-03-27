@@ -45,8 +45,8 @@ This is a GNOME GUI for the basic networking tools like ping, whois,
 traceroute and dig.
 
 %description -l pl.UTF-8
-GUI dla podstawowych narzędzi sieciowych, takich jak ping, whois,
-traceroute czy dig dla GNOME.
+Graficzny interfejs użytkownika do podstawowych narzędzi sieciowych,
+takich jak ping, whois, traceroute czy dig dla GNOME.
 
 %prep
 %setup -q
