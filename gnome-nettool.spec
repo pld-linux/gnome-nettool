@@ -52,9 +52,6 @@ traceroute czy dig dla GNOME.
 %setup -q
 %patch0 -p1
 
-sed -i -e 's/en@shaw//' po/LINGUAS
-rm -f po/en@shaw.po
-
 %build
 %{__intltoolize}
 %{__libtoolize}
