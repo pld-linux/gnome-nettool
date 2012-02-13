@@ -4,12 +4,12 @@
 Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
-Version:	3.0.0
+Version:	3.0.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	987b5b75dd9d70022934d900124d7bd7
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/3.0/%{name}-%{version}.tar.xz
+# Source0-md5:	922e7554102096f24a3519c93a8257fa
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf >= 2.64
@@ -27,6 +27,8 @@ BuildRequires:	libxml2-progs
 BuildRequires:	pkgconfig >= 0.16
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.311
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz >= 1:4.999.7
 Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	scrollkeeper
 Requires:	hicolor-icon-theme
