@@ -5,7 +5,7 @@ Summary:	GNOME interface for networking tools
 Summary(pl.UTF-8):	Interfejs dla narzędzi sieciowych dla GNOME
 Name:		gnome-nettool
 Version:	3.8.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-nettool/3.8/%{name}-%{version}.tar.xz
